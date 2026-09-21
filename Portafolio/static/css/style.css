@@ -5,28 +5,31 @@
 }
 
 body {
-    background-color: #f8f3ec;
-    color: #183b56;
-    font-family: "Comic Sans MS", cursive;
+    background-color: #f9f7f3;
+    color: #253c59;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-.navegacion .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+/* =========================
+   CONTRASTE DE SECCIONES
+========================= */
+
+.seccion-blanca {
+    background-color: #ffffff;
+    border-top: 1px solid #d8e8f5;
+    border-bottom: 1px solid #d8e8f5;
 }
 
-.icono-info {
-    width: 50px;
-    min-width: 50px;
-    height: 50px;
-    min-height: 50px;
-}
+/* =========================
+   ENCABEZADO Y NAVEGACIÓN
+========================= */
+
 .encabezado {
     width: 100%;
-    background-color: rgb(252, 251, 251);
-    border-bottom: 1px solid #d8c9d9;
+    background-color: #ffffff;
+    border-bottom: 1px solid #d8e8f5;
 }
+
 .navegacion {
     max-width: 1100px;
     margin: auto;
@@ -36,23 +39,24 @@ body {
     justify-content: space-between;
 }
 
-.logo {
-    text-decoration: none;
-    color: #183b56;
-    font-size: 24px;
-}
-.logo img{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
+.navegacion .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.logo a{
-    color: #183b56;
-    text-decoration: none;
-    font-family: "Comic Sans MS", cursive;
-    font-weight: bold;
+.logo img {
+    width: 60px;
+    height: 60px;
 }
+
+.logo a {
+    color: #253c59;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+}
+
 .menu {
     display: flex;
     gap: 25px;
@@ -60,23 +64,18 @@ body {
 
 .menu a {
     text-decoration: none;
-    color: #183b56;
+    color: #253c59;
     font-weight: bold;
 }
 
 .menu a:hover {
-    color: #8b79a8;
-}
-
-.acciones-menu {
-    display: flex;
-    gap: 10px;
+    color: #e8998d;
 }
 
 .acciones-menu button {
     border: none;
-    background-color: #d9c9e8;
-    color: #183b56;
+    background-color: #d8e8f5;
+    color: #253c59;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -84,20 +83,15 @@ body {
     cursor: pointer;
 }
 
-#boton-menu {
-    display: none;
-}
-
-
 /* =========================
-   INICIO
+   INICIO / SOBRE MÍ
 ========================= */
 
 .inicio {
     max-width: 1100px;
-    min-height: 650px;
+    height: 600px;
     margin: auto;
-    padding: 100px 30px;
+    padding: 80px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -109,19 +103,18 @@ body {
 }
 
 .saludo {
-    color: #8b79a8;
+    color: #e8998d;
     font-size: 24px;
-    font-family: "Comic Sans MS", cursive;
 }
 
 .inicio h1 {
-    font-size: 60px;
+    font-size: 55px;
     margin: 10px 0;
 }
 
 .inicio h2 {
     color: #6eb6df;
-    font-size: 28px;
+    font-size: 26px;
     margin-bottom: 20px;
 }
 
@@ -129,12 +122,13 @@ body {
     max-width: 600px;
     font-size: 17px;
     margin-bottom: 30px;
+    line-height: 24px;
 }
 
 .boton {
     display: inline-block;
     text-decoration: none;
-    background-color: #6eb6df;
+    background-color: #253c59;
     color: white;
     padding: 13px 25px;
     border-radius: 25px;
@@ -142,17 +136,14 @@ body {
 }
 
 .boton:hover {
-    background-color: #8b79a8;
+    background-color: #e8998d;
 }
 
 .boton:active {
-    background-color: #183b56;
+    background-color: #253c59;
 }
 
-
-/* =========================
-FOTO
-========================= */
+/* FOTO */
 
 .inicio-foto {
     width: 40%;
@@ -161,106 +152,95 @@ FOTO
 }
 
 .circulo-foto {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
-    background-color: #d9eefa;
+    background-color: #d8e8f5;
     border: 8px solid white;
-    box-shadow: 0 10px 30px rgba(24, 59, 86, 0.15);
+    box-shadow: 0 10px 30px rgba(37, 60, 89, 0.15);
 }
 
 .circulo-foto img {
     width: 100%;
-    height: 100%;
+    height: auto;
     border-radius: 50%;
 }
 
-
-/* =========================
-   DECORACIONES
-========================= */
+/* DECORACIONES */
 
 .decoracion {
     position: absolute;
-    font-family: cursive;
 }
 
 .nube-izquierda {
     left: 20px;
-    top: 100px;
-    color: #b9dced;
+    top: 60px;
+    color: #8c9da8;
     font-size: 70px;
 }
 
 .estrella-uno {
-    right: 45%;
-    top: 100px;
-    color: #8b79a8;
+    right: 200px;
+    top: 60px;
+    color: #e8998d;
     font-size: 35px;
 }
 
 .estrella-dos {
-    right: 10%;
-    bottom: 100px;
+    right: 10px;
+    bottom: 60px;
     color: #6eb6df;
     font-size: 30px;
 }
 
 .luna-grande {
-    right: 5%;
-    top: 50px;
-    color: #8b79a8;
+    right: 50px;
+    top: 40px;
+    color: #8c9da8;
     font-size: 80px;
 }
 
 .frase-inicio {
     position: absolute;
-    bottom: 70px;
+    bottom: 40px;
     left: 30px;
-    color: #8b79a8;
+    color: #e8998d;
     font-size: 22px;
-    transform: rotate(-8deg);
 }
-
-.frase-inicio span {
-    font-size: 25px;
-}
-
 
 /* =========================
-   SECCIONES
+   SECCIONES GENERALES
 ========================= */
 
 .seccion {
     max-width: 1100px;
     margin: auto;
-    padding: 90px 30px;
+    padding: 80px 30px;
 }
 
 .titulo-seccion {
     display: flex;
     align-items: center;
     gap: 15px;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
 }
 
-.titulo-seccion  span {
-    color: #8b79a8;
+.titulo-seccion span {
+    color: #e8998d;
     font-size: 35px;
 }
 
 .titulo-seccion p {
-    color: #8b79a8;
+    color: #8c9da8;
     font-size: 17px;
 }
 
 .titulo-seccion h2 {
-    font-size: 40px;
+    font-size: 38px;
 }
 
-
 /* =========================
-PROYECTOS
+   PROYECTOS
 ========================= */
 
 .titulo-con-enlace {
@@ -269,8 +249,8 @@ PROYECTOS
     justify-content: space-between;
 }
 
-.titulo-con-enlace  a {
-    color: #8b79a8;
+.titulo-con-enlace a {
+    color: #e8998d;
     text-decoration: none;
     font-weight: bold;
 }
@@ -285,22 +265,17 @@ PROYECTOS
     padding: 20px;
     border-radius: 25px;
     flex: 1;
-    box-shadow: 0 8px 25px rgba(24, 59, 86, 0.08);
-    transition: transform 0.3s;
-}
-
-.tarjeta-proyecto:hover {
-    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(37, 60, 89, 0.08);
 }
 
 .tarjeta-proyecto img {
     width: 100%;
-    height: 180px;
+    height: auto;
     border-radius: 18px;
 }
 
 .tarjeta-proyecto h3 {
-    font-size: 25px;
+    font-size: 24px;
     margin: 20px 0 10px;
 }
 
@@ -311,13 +286,12 @@ PROYECTOS
 .tecnologias {
     display: flex;
     gap: 8px;
-    flex-wrap: wrap;
     margin-bottom: 20px;
 }
 
 .tecnologias span {
-    background-color: #d9eefa;
-    color: #183b56;
+    background-color: #d8e8f5;
+    color: #253c59;
     padding: 6px 10px;
     border-radius: 15px;
     font-size: 13px;
@@ -335,32 +309,19 @@ PROYECTOS
 }
 
 .enlaces-proyecto a:hover {
-    color: #8b79a8;
+    color: #e8998d;
 }
-
-.enlaces-proyecto a:active {
-    color: #183b56;
-}
-
 
 /* =========================
    HABILIDADES
 ========================= */
 
-.habilidades {
-    text-align: left;
-}
-
-.habilidades .titulo-seccion {
-    text-align: left;
-}
-
 .habilidad {
-    background-color: white;
+    background-color: #f9f7f3;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 20px;
-    box-shadow: 0 8px 25px rgba(24, 59, 86, 0.08);
+    box-shadow: 0 4px 15px rgba(37, 60, 89, 0.05);
 }
 
 .habilidad-arriba {
@@ -371,73 +332,64 @@ PROYECTOS
 }
 
 .habilidad h3 {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .habilidad-arriba span {
-    color: #8b79a8;
+    color: #8c9da8;
     font-weight: bold;
 }
-
-
-/* BARRA */
 
 .barra {
     width: 100%;
     height: 12px;
-    background-color: #e5e0ee;
+    background-color: #e0e0e0;
     border-radius: 10px;
 }
 
-
-/* PROGRESO */
-
 .progreso-html {
-    width: 90%;
-    height: 12px;
+    width: 70%;
+    height: 100%;
     background-color: #6eb6df;
     border-radius: 10px;
 }
 
 .progreso-css {
-    width: 80%;
-    height: 12px;
-    background-color: #8b79a8;
+    width: 85%;
+    height: 100%;
+    background-color: #e8998d;
     border-radius: 10px;
 }
 
 .progreso-js {
-    width: 70%;
-    height: 12px;
-    background-color: #6eb6df;
+    width: 50%;
+    height: 100%;
+    background-color: #253c59;
     border-radius: 10px;
 }
 
 .progreso-git {
-    width: 65%;
-    height: 12px;
-    background-color: #8b79a8;
+    width: 80%;
+    height: 100%;
+    background-color: #8c9da8;
     border-radius: 10px;
 }
 
 .progreso-github {
-    width: 70%;
-    height: 12px;
+    width: 88%;
+    height: 100%;
     background-color: #6eb6df;
     border-radius: 10px;
 }
 
 .frase-seccion {
-    margin-top: 45px;
-    font-family: cursive;
-    color: #8b79a8;
+    margin-top: 35px;
+    color: #e8998d;
     font-size: 22px;
-    transform: rotate(-3deg);
 }
 
-
 /* =========================
-REFERENCIA 
+   REFERENCIA Y EDUCACIÓN
 ========================= */
 
 .columna {
@@ -445,10 +397,9 @@ REFERENCIA
     gap: 40px;
 }
 
-.referencia {
+.referencia, .educacion {
     flex: 1;
 }
-
 
 .tarjeta-info {
     background-color: white;
@@ -456,36 +407,22 @@ REFERENCIA
     border-radius: 25px;
     display: flex;
     gap: 20px;
-    box-shadow: 0 8px 25px rgba(24, 59, 86, 0.08);
+    box-shadow: 0 8px 25px rgba(37, 60, 89, 0.08);
 }
 
 .icono-info {
     width: 50px;
     height: 50px;
-    background-color: #d9eefa;
+    background-color: #d8e8f5;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 25px;
+    font-size: 22px;
 }
-
-.tarjeta-info h3 {
-    margin-bottom: 10px;
-}
-
 
 /* =========================
-EDUCACIÓN
-========================= */
-
-.educacion {
-    flex: 1;
-}
-
-
-/* =========================
-TRABAJOS
+   TAREAS Y TRABAJOS
 ========================= */
 
 .tarjetas-trabajos {
@@ -494,27 +431,23 @@ TRABAJOS
 }
 
 .tarjeta-trabajo {
-    background-color: white;
+    background-color: #f9f7f3;
     padding: 25px;
     border-radius: 25px;
     flex: 1;
     display: flex;
     gap: 20px;
-    box-shadow: 0 8px 25px rgba(24, 59, 86, 0.08);
+    box-shadow: 0 8px 25px rgba(37, 60, 89, 0.05);
 }
 
 .icono-trabajo {
-    min-width: 50px;
+    width: 50px;
     height: 50px;
     border-radius: 15px;
-    background-color: #d9c9e8;
+    background-color: #d8e8f5;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.tarjeta-trabajo h3 {
-    margin-bottom: 10px;
 }
 
 .tarjeta-trabajo span {
@@ -524,9 +457,8 @@ TRABAJOS
     font-size: 14px;
 }
 
-
 /* =========================
-VIDEO
+   VIDEO
 ========================= */
 
 .video-seccion {
@@ -549,13 +481,12 @@ VIDEO
 }
 
 .video-texto h2 {
-    font-size: 40px;
+    font-size: 38px;
     margin: 10px 0 20px;
 }
 
-
 /* =========================
-CONTACTO
+   CONTACTO
 ========================= */
 
 .contacto {
@@ -569,8 +500,8 @@ CONTACTO
 }
 
 .contacto-texto h2 {
-    font-size: 45px;
-    margin: 10px 0 20px;
+    font-size: 42px;
+    margin-bottom: 15px;
 }
 
 .contactos {
@@ -588,41 +519,36 @@ CONTACTO
     align-items: center;
     gap: 20px;
     text-decoration: none;
-    color: #183b56;
-    box-shadow: 0 8px 25px rgba(24, 59, 86, 0.08);
+    color: #253c59;
+    box-shadow: 0 8px 25px rgba(37, 60, 89, 0.08);
 }
 
 .contacto-card:hover {
-    background-color: #d9eefa;
+    background-color: #d8e8f5;
 }
 
 .contacto-card > span {
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    background-color: #d9c9e8;
+    background-color: #d8e8f5;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
 }
 
-.contacto-card p {
-    margin-top: 5px;
-}
-
-
 /* =========================
-FOOTER
+   FOOTER
 ========================= */
 
 footer {
-    background-color: #183b56;
+    background-color: #253c59;
     color: white;
     text-align: center;
     padding: 40px 20px;
 }
 
 footer p {
-    margin: 8px 0;
+    margin: 6px 0;
 }

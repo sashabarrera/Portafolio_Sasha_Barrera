@@ -5,20 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Sasha Barrera"> 
-    <title>Sasha Barrera</title>
+    <title>Sasha Barrera | Portafolio</title>
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 
-
 <body>
-    <!-- ====================
-        ENCABEZADO
-    ==================== -->
+    <!-- ==================== ENCABEZADO ==================== -->
     <header class="encabezado">
         <nav class="navegacion">
             <div class="logo">
-                <img src="img/logo.png" alt="Logo de Sasha">
-                <a href="#inicio">☁ Sasha</a>
+                <img src="static/images/totoro.jpg" alt="Logo de Sasha">
+                <a href="#inicio"> Sasha</a>
             </div>
             <div class="menu" id="menu">
                 <a href="#inicio">Inicio</a>
@@ -29,496 +26,329 @@
                 <a href="#contacto">Contacto</a>
             </div>
             <div class="acciones-menu">
-                <button id="boton-menu">
+                <button id="boton-menu" aria-label="Abrir menú">
                     ☰
                 </button>
             </div>
         </nav>
     </header>
 
-
     <main>
-        <!-- ====================
-            INICIO
-        ==================== -->
-        <section id="inicio" class="inicio">
-            <div class="decoracion nube-izquierda">
-                ☁
-            </div>
-            <div class="decoracion estrella-uno">
-                ☆
-            </div>
-            <div class="decoracion estrella-dos">
-                ✦
-            </div>
-            <div class="decoracion luna-grande">
-                ☾
-            </div>
-            <div class="inicio-texto">
-                <p class="saludo">
-                    Hola, soy
-                </p>
-                <h1>
-                    Sasha Barrera ☆
-                </h1>
-                <h2>
-                    Desarrolladora Frond Junior
-                </h2>
-                <p>
-                    Me apasiona la tecnología, el diseño y crear cosas
-                    que puedan hacer la vida más fácil y bonita.
-                    Actualmente estoy aprendiendo y desarrollando
-                    mis habilidades como programadora.
-                </p>
-                <a href="#proyectos" class="boton">
-                    Ver mis proyectos →
-                </a>
-            </div>
-            <div class="inicio-foto">
-                <div class="circulo-foto">
-                    <!-- AQUÍ PONES TU FOTO -->
-                    <img src="img/foto.jpg" alt="Foto de Sasha">
+        <!-- ==================== INICIO / SOBRE MÍ ==================== -->
+        <section id="inicio" class="seccion-blanca">
+            <div class="inicio">
+                <div class="decoracion nube-izquierda">☁</div>
+                <div class="decoracion estrella-uno">☆</div>
+                <div class="decoracion estrella-dos">✦</div>
+                <div class="decoracion luna-grande">☾</div>
+                
+                <div class="inicio-texto">
+                    <p class="saludo">Hola, soy</p>
+                    <h1>Sasha Barrera ☆</h1>
+                    <h2>Desarrolladora Frontend Junior</h2>
+                    <p>
+                        Lo que más me motiva del desarrollo web es la parte visual. 
+                        CSS es el lenguaje con el que más disfruto conectar, ya que me 
+                        encanta ver cómo el código le da vida, 
+                        color y forma a una página, logrando que la estética se adapte de 
+                        manera fluida a distintas pantallas. 
+                        Actualmente perfecciono mis habilidades en HTML, 
+                        CSS y JavaScript creando proyectos personales.
+                    </p>
+                    <a href="#proyectos" class="boton">
+                        Ver mis proyectos →
+                    </a>
+                </div>
+                
+                <div class="inicio-foto">
+                    <div class="circulo-foto">
+                        <img src="static/images/Fotodeperfil.jpg" alt="Foto de Sasha Barrera">
+                    </div>
+                </div>
+                
+                <div class="frase-inicio">
+                    <span>♡</span>
                 </div>
             </div>
-            <div class="frase-inicio">
-                <span>
-                    ♡
-                </span>
-            </div>
         </section>
-        <!-- ====================
-            PROYECTOS
-        ==================== -->
+
+        <!-- ==================== PROYECTOS ==================== -->
         <section id="proyectos" class="seccion proyectos">
             <div class="titulo-con-enlace">
                 <div class="titulo-seccion">
-                    <span>
-                        ☆
-                    </span>
+                    <span>☆</span>
                     <div>
-                        <p>
-                            Mi trabajo
-                        </p>
-                        <h2>
-                            Mis proyectos
-                        </h2>
+                        <p>Mi trabajo</p>
+                        <h2>Mis proyectos</h2>
                     </div>
                 </div>
-                <a href="#proyectos">
-                    Ver todos →
-                </a>
+                <a href="#proyectos">Ver todos →</a>
             </div>
+            
             <div class="tarjetas-proyectos">
                 <!-- PROYECTO 1 -->
-                <div class="tarjeta-proyecto">
-                    <img src="img/proyecto1.jpg" alt="Imagen del proyecto 1">
-                    <h3>
-                        Proyecto 
-                    </h3>
-                    <p>
-                        Una página web con un diseño sencillo
-                        y moderno.
-                    </p>
+                <article class="tarjeta-proyecto">
+                    <img src="static/images/proyecto.png" alt="Imagen del proyecto 1">
+                    <h3>Proyecto 01</h3>
+                    <p>Una página web con un diseño sencillo y moderno.</p>
                     <div class="tecnologias">
-                        <span>
-                            HTML
-                        </span>
-                        <span>
-                            CSS
-                        </span>
-                        <span>
-                            JavaScript
-                        </span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
                     </div>
                     <div class="enlaces-proyecto">
-                        <a href="AQUI-PONES-TU-PROYECTO">
-                            Ver proyecto →
-                        </a>
-                        <a href="AQUI-PONES-TU-GITHUB">
-                            GitHub
-                        </a>
+                        <a href="#">Ver proyecto →</a>
+                        <a href="#">GitHub</a>
                     </div>
-                </div>
+                </article>
+
                 <!-- PROYECTO 2 -->
-                <div class="tarjeta-proyecto">
+                <article class="tarjeta-proyecto">
                     <img src="img/proyecto2.jpg" alt="Imagen del proyecto 2">
-                    <h3>
-                        Proyecto 02
-                    </h3>
-                    <p>
-                        Aplicación de música con funciones
-                        básicas.
-                    </p>
+                    <h3>Proyecto 02</h3>
+                    <p>Aplicación de música con funciones básicas.</p>
                     <div class="tecnologias">
-                        <span>
-                            HTML
-                        </span>
-                        <span>
-                            CSS
-                        </span>
-                        <span>
-                            JavaScript
-                        </span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
                     </div>
                     <div class="enlaces-proyecto">
-                        <a href="AQUI-PONES-TU-PROYECTO">
-                            Ver proyecto →
-                        </a>
-                        <a href="AQUI-PONES-TU-GITHUB">
-                            GitHub
-                        </a>
+                        <a href="#">Ver proyecto →</a>
+                        <a href="#">GitHub</a>
                     </div>
-                </div>
+                </article>
+
                 <!-- PROYECTO 3 -->
-                <div class="tarjeta-proyecto">
+                <article class="tarjeta-proyecto">
                     <img src="img/proyecto3.jpg" alt="Imagen del proyecto 3">
-                    <h3>
-                        Proyecto 03
-                    </h3>
-                    <p>
-                        Lista de tareas para organizar
-                        tu día.
-                    </p>
+                    <h3>Proyecto 03</h3>
+                    <p>Lista de tareas para organizar tu día.</p>
                     <div class="tecnologias">
-                        <span>
-                            HTML
-                        </span>
-                        <span>
-                            CSS
-                        </span>
-                        <span>
-                            JavaScript
-                        </span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
                     </div>
                     <div class="enlaces-proyecto">
-                        <a href="AQUI-PONES-TU-PROYECTO">
-                            Ver proyecto →
-                        </a>
-                        <a href="AQUI-PONES-TU-GITHUB">
-                            GitHub
-                        </a>
+                        <a href="#">Ver proyecto →</a>
+                        <a href="#">GitHub</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ==================== HABILIDADES ==================== -->
+        <section id="habilidades" class="seccion-blanca">
+            <div class="seccion habilidades">
+                <div class="titulo-seccion">
+                    <span>☆</span>
+                    <div>
+                        <p>Lo que estoy aprendiendo</p>
+                        <h2>Mis habilidades</h2>
                     </div>
                 </div>
+                
+                <!-- HTML -->
+                <div class="habilidad">
+                    <div class="habilidad-arriba">
+                        <h3>HTML</h3>
+                        <span>70%</span>
+                    </div>
+                    <div class="barra">
+                        <div class="progreso-html"></div>
+                    </div>
+                </div>
+
+                <!-- CSS -->
+                <div class="habilidad">
+                    <div class="habilidad-arriba">
+                        <h3>CSS</h3>
+                        <span>85%</span>
+                    </div>
+                    <div class="barra">
+                        <div class="progreso-css"></div>
+                    </div>
+                </div>
+
+                <!-- JAVASCRIPT -->
+                <div class="habilidad">
+                    <div class="habilidad-arriba">
+                        <h3>JavaScript</h3>
+                        <span>50%</span>
+                    </div>
+                    <div class="barra">
+                        <div class="progreso-js"></div>
+                    </div>
+                </div>
+
+                <!-- GIT -->
+                <div class="habilidad">
+                    <div class="habilidad-arriba">
+                        <h3>Git</h3>
+                        <span>80%</span>
+                    </div>
+                    <div class="barra">
+                        <div class="progreso-git"></div>
+                    </div>
+                </div>
+
+                <!-- GITHUB -->
+                <div class="habilidad">
+                    <div class="habilidad-arriba">
+                        <h3>GitHub</h3>
+                        <span>88%</span>
+                    </div>
+                    <div class="barra">
+                        <div class="progreso-github"></div>
+                    </div>
+                </div>
+
+                <p class="frase-seccion">
+                    Pequeños pasos,<br>
+                    grandes logros ♡
+                </p>
             </div>
         </section>
-        <!-- ====================
-            HABILIDADES
-        ==================== -->
-        <section id="habilidades" class="seccion habilidades">
-            <div class="titulo-seccion">
-                <span>
-                    ☆
-                </span>
-                <div>
-                    <p>
-                        Lo que estoy aprendiendo
-                    </p>
-                    <h2>
-                        Mis habilidades
-                    </h2>
-                </div>
-            </div>
-            <!-- HTML -->
-            <div class="habilidad">
-                <div class="habilidad-arriba">
-                    <h3>
-                        HTML
-                    </h3>
-                    <span>
-                        70%
-                    </span>
-                </div>
-                <div class="barra">
-                    <div class="progreso-html"></div>
-                </div>
-            </div>
-            <!-- CSS -->
-            <div class="habilidad">
-                <div class="habilidad-arriba">
-                    <h3>
-                        CSS
-                    </h3>
-                    <span>
-                        85%
-                    </span>
-                </div>
-                <div class="barra">
-                    <div class="progreso-css"></div>
-                </div>
-            </div>
-            <!-- JAVASCRIPT -->
-            <div class="habilidad">
-                <div class="habilidad-arriba">
-                    <h3>
-                        JavaScript
-                    </h3>
-                    <span>
-                        50%
-                    </span>
-                </div>
-                <div class="barra">
-                    <div class="progreso-js"></div>
-                </div>
-            </div>
-            <!-- GIT -->
-            <div class="habilidad">
-                <div class="habilidad-arriba">
-                    <h3>
-                        Git
-                    </h3>
-                    <span>
-                        80%
-                    </span>
-                </div>
-                <div class="barra">
-                    <div class="progreso-git"></div>
-                </div>
-            </div>
-            <!-- GITHUB -->
-            <div class="habilidad">
-                <div class="habilidad-arriba">
-                    <h3>
-                        GitHub
-                    </h3>
-                    <span>
-                        88%
-                    </span>
-                </div>
-                <div class="barra">
-                    <div class="progreso-github"></div>
-                </div>
-            </div>
-            <p class="frase-seccion">
-                Pequeños pasos,<br>
-                grandes logros ♡
-            </p>
-        </section>
-        <!-- ====================
-            EXPERIENCIA Y EDUCACIÓN
-        ==================== -->
-        <section id="experiencia" class="seccion columna">
-            <!-- EXPERIENCIA -->
+
+        <!-- ==================== REFERENCIA Y EDUCACIÓN ==================== -->
+        <section id="referencia" class="seccion columna">
+            <!-- REFERENCIA -->
             <div class="referencia">
                 <div class="titulo-seccion">
-                    <span>
-                        ☆
-                    </span>
+                    <span>☆</span>
                     <div>
-                        <h2>
-                        Referencia
-                        </h2>
+                        <h2>Referencia</h2>
                     </div>
                 </div>
                 <div class="tarjeta-info">
-                    <div class="icono-info">
-                        □
-                    </div>
+                    <div class="icono-info">□</div>
                     <div>
-                        <h3>
-                            En proceso...
-                        </h3>
+                        <h3>En proceso...</h3>
                         <p>
-                            Actualmente estoy aprendiendo
-                            y realizando proyectos personales
-                            para seguir creciendo en el mundo tech.
+                            Actualmente estoy aprendiendo y realizando proyectos
+                            personales para seguir creciendo en el mundo tech.
                         </p>
                     </div>
                 </div>
             </div>
+
             <!-- EDUCACIÓN -->
             <div id="educacion" class="educacion">
                 <div class="titulo-seccion">
-                    <span>
-                        ☆
-                    </span>
+                    <span>☆</span>
                     <div>
-                        <h2>
-                            Educación
-                        </h2>
+                        <h2>Educación</h2>
                     </div>
                 </div>
                 <div class="tarjeta-info">
-                    <div class="icono-info">
-                        ◇
-                    </div>
+                    <div class="icono-info">◇</div>
                     <div>
-                        <h3>
-                            Educación secundaria
-                        </h3>
+                        <h3>Educación secundaria</h3>
                         <p>
-                            Actualmente en proceso
-                            de finalizar mis estudios.
+                            Actualmente en proceso de finalizar mis estudios.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- ====================
-            TAREAS Y TRABAJOS
-        ==================== -->
-        <section class="seccion trabajos">
-            <div class="titulo-seccion">
-                <span>
-                    ☆
-                </span>
-                <div>
-                    <p>
-                        También he realizado
-                    </p>
-                    <h2>
-                        Tareas y trabajos
-                    </h2>
-                </div>
-            </div>
-            <div class="tarjetas-trabajos">
-                <div class="tarjeta-trabajo">
-                    <div class="icono-trabajo">
-                        □
-                    </div>
+
+        <!-- ==================== TAREAS Y TRABAJOS ==================== -->
+        <section class="seccion-blanca">
+            <div class="seccion trabajos">
+                <div class="titulo-seccion">
+                    <span>☆</span>
                     <div>
-                        <h3>
-                            Página web personal
-                        </h3>
-                        <p>
-                            Diseño y estructura básica.
-                        </p>
-                        <span>
-                            HTML & CSS
-                        </span>
+                        <p>También he realizado</p>
+                        <h2>Tareas y trabajos</h2>
                     </div>
                 </div>
-                <div class="tarjeta-trabajo">
-                    <div class="icono-trabajo">
-                        ▣
+                <div class="tarjetas-trabajos">
+                    <div class="tarjeta-trabajo">
+                        <div class="icono-trabajo">□</div>
+                        <div>
+                            <h3>Página web personal</h3>
+                            <p>Diseño y estructura básica.</p>
+                            <span>HTML & CSS</span>
+                        </div>
                     </div>
-                    <div>
-                        <h3>
-                            Calculadora
-                        </h3>
-                        <p>
-                            Operaciones matemáticas básicas.
-                        </p>
-                        <span>
-                            JavaScript
-                        </span>
+                    <div class="tarjeta-trabajo">
+                        <div class="icono-trabajo">▣</div>
+                        <div>
+                            <h3>Calculadora</h3>
+                            <p>Operaciones matemáticas básicas.</p>
+                            <span>JavaScript</span>
+                        </div>
                     </div>
-                </div>
-                <div class="tarjeta-trabajo">
-                    <div class="icono-trabajo">
-                        ♡
-                    </div>
-                    <div>
-                        <h3>
-                            Formulario de contacto
-                        </h3>
-                        <p>
-                            Validación de datos.
-                        </p>
-                        <span>
-                            HTML & CSS & JavaScript
-                        </span>
+                    <div class="tarjeta-trabajo">
+                        <div class="icono-trabajo">♡</div>
+                        <div>
+                            <h3>Formulario de contacto</h3>
+                            <p>Validación de datos.</p>
+                            <span>HTML & CSS & JavaScript</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- ====================
-            VIDEO
-        ==================== -->
+
+        <!-- ==================== VIDEO ==================== -->
         <section class="seccion video-seccion">
             <div class="video">
-                <!-- AQUÍ PONES TU VIDEO -->
                 <video controls>
                     <source src="video/presentacion.mp4" type="video/mp4">
-                    Tu navegador no puede reproducir
-                    este video.
+                    Tu navegador no puede reproducir este video.
                 </video>
             </div>
             <div class="video-texto">
+                <p>Conoce mi proceso</p>
+                <h2>Mi presentación</h2>
                 <p>
-                    Conoce mi proceso
-                </p>
-                <h2>
-                    Mi presentación
-                </h2>
-                <p>
-                    En este video te cuento un poco más
-                    sobre mí, mis intereses y mi proceso
-                    de aprendizaje en el mundo de la programación.
+                    En este video te cuento un poco más sobre mí, mis intereses
+                    y mi proceso de aprendizaje en el mundo de la programación.
                 </p>
             </div>
         </section>
-        <!-- ====================
-            CONTACTO
-        ==================== -->
+
+        <!-- ==================== CONTACTO ==================== -->
         <section id="contacto" class="seccion contacto">
-            <div class="contacto-texto"></div>
-                <h2>
-                    Contacto
-                </h2>
+            <div class="contacto-texto">
+                <h2>Contacto</h2>
                 <p>
-                    Si quieres conocer más sobre mí,
-                    mi trabajo o simplemente saludar,
-                    ¡escríbeme!
+                    Si quieres conocer más sobre mí, mi trabajo o simplemente
+                    saludar, ¡escríbeme!
                 </p>
             </div>
             <div class="contactos">
-                <!-- CORREO -->
-                <a href="mailto:TU-CORREO@GMAIL.COM" class="contacto-card">
-                    <span>
-                        ✉
-                    </span>
+                <a href="mailto:sashabarrera@liceo.vvh" class="contacto-card">
+                    <span>✉</span>
                     <div>
-
-                        <strong>
-                            Correo
-                        </strong>
-                        <p>
-                            sashabarrera@liceo.vvh
-                        </p>
+                        <strong>Correo</strong>
+                        <p>sashabarrera@liceo.vvh</p>
                     </div>
                 </a>
-                <!-- LINKEDIN -->
-                <a href="AQUI-PONES-TU-LINKEDIN" class="contacto-card">
-                    <span>
-                        in
-                    </span>
+                <a href="#" class="contacto-card">
+                    <span>in</span>
                     <div>
-                        <strong>
-                            LinkedIn
-                        </strong>
-                        <p>
-                            Mi LinkedIn
-                        </p>
+                        <strong>LinkedIn</strong>
+                        <p>Mi LinkedIn</p>
                     </div>
                 </a>
-                <!-- GITHUB -->
-                <a href="AQUI-PONES-TU-GITHUB" class="contacto-card">
-                    <span>
-                        ●
-                    </span>
+                <a href="#" class="contacto-card">
+                    <span>●</span>
                     <div>
-                        <strong>
-                            GitHub
-                        </strong>
-                        <p>
-                            Mi GitHub
-                        </p>
+                        <strong>GitHub</strong>
+                        <p>Mi GitHub</p>
                     </div>
                 </a>
             </div>
         </section>
     </main>
-    <!-- =======================
-            PIE DE PÁGINA
-        ======================-->
+
+    <!-- ==================== PIE DE PÁGINA ==================== -->
     <footer>
-        <p>
-            © 2026 Sasha Barrera.
-        </p>
-        <p>
-            Portafolio creado con HTML, CSS y JavaScript.
-        </p>
+        <p>© 2026 Sasha Barrera.</p>
+        <p>Portafolio creado con HTML, CSS y JavaScript.</p>
     </footer>
+
     <script src="static/js/script.js"></script>
 </body>
 
