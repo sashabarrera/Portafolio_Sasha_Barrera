@@ -7,48 +7,27 @@
 body {
     background-color: #f8f3ec;
     color: #183b56;
-    font-family: Arial, sans-serif;
-}
-
-h1 {
     font-family: "Comic Sans MS", cursive;
 }
 
-h2 {
-    font-family: "Comic Sans MS", cursive;
+.navegacion .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-h3 {
-    font-family: "Comic Sans MS", cursive;
+.icono-info {
+    flex-shrink: 0;
+    width: 50px;
+    min-width: 50px;
+    height: 50px;
+    min-height: 50px;
 }
-
-.logo {
-    font-family: "Comic Sans MS", cursive;
-}
-
-.boton {
-    font-family: "Comic Sans MS", cursive;
-}
-
-.titulo-seccion p {
-    font-family: "Comic Sans MS", cursive;
-}
-
-.frase-inicio {
-    font-family: "Comic Sans MS", cursive;
-}
-
-
-/* =========================
-   ENCABEZADO
-========================= */
-
 .encabezado {
     width: 100%;
-    background-color: #f8f3ec;
+    background-color: #f7f7f7;
     border-bottom: 1px solid #d8c9d9;
 }
-
 .navegacion {
     max-width: 1100px;
     margin: auto;
@@ -63,7 +42,18 @@ h3 {
     color: #183b56;
     font-size: 24px;
 }
+.logo img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
 
+.logo a{
+    color: #183b56;
+    text-decoration: none;
+    font-family: "Comic Sans MS", cursive;
+    font-weight: bold;
+}
 .menu {
     display: flex;
     gap: 25px;
@@ -278,6 +268,7 @@ h3 {
     display: flex;
     gap: 30px;
     align-items: stretch;
+    background-color: #f7f7f7;
 }
 
 .sobre-texto {
@@ -342,7 +333,7 @@ h3 {
     justify-content: space-between;
 }
 
-.titulo-con-enlace  a {
+.titulo-con-enlace > a {
     color: #8b79a8;
     text-decoration: none;
     font-weight: bold;
@@ -466,35 +457,35 @@ h3 {
 /* PROGRESO */
 
 .progreso-html {
-    width: 70%;
+    width: 90%;
     height: 12px;
     background-color: #6eb6df;
     border-radius: 10px;
 }
 
 .progreso-css {
-    width: 85%;
-    height: 12px;
-    background-color: #8b79a8;
-    border-radius: 10px;
-}
-
-.progreso-js {
-    width: 50%;
-    height: 12px;
-    background-color: #6eb6df;
-    border-radius: 10px;
-}
-
-.progreso-git {
     width: 80%;
     height: 12px;
     background-color: #8b79a8;
     border-radius: 10px;
 }
 
+.progreso-js {
+    width: 70%;
+    height: 12px;
+    background-color: #6eb6df;
+    border-radius: 10px;
+}
+
+.progreso-git {
+    width: 65%;
+    height: 12px;
+    background-color: #8b79a8;
+    border-radius: 10px;
+}
+
 .progreso-github {
-    width: 88%;
+    width: 70%;
     height: 12px;
     background-color: #6eb6df;
     border-radius: 10px;
@@ -510,7 +501,7 @@ h3 {
 
 
 /* =========================
-   EXPERIENCIA Y EDUCACIÓN
+EXPERIENCIA Y EDUCACIÓN
 ========================= */
 
 .dos-columnas {
@@ -525,6 +516,7 @@ h3 {
 .educacion {
     flex: 1;
 }
+
 .tarjeta-info {
     background-color: white;
     padding: 30px;
@@ -535,7 +527,7 @@ h3 {
 }
 
 .icono-info {
-    min-width: 50px;
+    width: 50px;
     height: 50px;
     background-color: #d9eefa;
     border-radius: 50%;
@@ -551,7 +543,7 @@ h3 {
 
 
 /* =========================
-   TRABAJOS
+TRABAJOS
 ========================= */
 
 .tarjetas-trabajos {
@@ -592,7 +584,7 @@ h3 {
 
 
 /* =========================
-   VIDEO
+VIDEO
 ========================= */
 
 .video-seccion {
@@ -621,7 +613,7 @@ h3 {
 
 
 /* =========================
-   CONTACTO
+CONTACTO
 ========================= */
 
 .contacto {
@@ -662,7 +654,7 @@ h3 {
     background-color: #d9eefa;
 }
 
-.contacto-card  span {
+.contacto-card > span {
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -679,7 +671,7 @@ h3 {
 
 
 /* =========================
-   FOOTER
+FOOTER
 ========================= */
 
 footer {
