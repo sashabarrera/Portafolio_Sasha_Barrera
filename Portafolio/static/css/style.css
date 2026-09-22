@@ -10,8 +10,9 @@ body {
     font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
+
 /* =========================
-   CONTRASTE DE SECCIONES
+CONTRASTE DE SECCIONES
 ========================= */
 
 .seccion-blanca {
@@ -20,8 +21,9 @@ body {
     border-bottom: 1px solid #d8e8f5;
 }
 
+
 /* =========================
-   ENCABEZADO Y NAVEGACIÓN
+ENCABEZADO
 ========================= */
 
 .encabezado {
@@ -37,6 +39,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .navegacion .logo {
@@ -48,6 +51,7 @@ body {
 .logo img {
     width: 60px;
     height: 60px;
+    border-radius: 50%;
 }
 
 .logo a {
@@ -72,19 +76,9 @@ body {
     color: #e8998d;
 }
 
-.acciones-menu button {
-    border: none;
-    background-color: #d8e8f5;
-    color: #253c59;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    font-size: 20px;
-    cursor: pointer;
-}
 
 /* =========================
-   INICIO / SOBRE MÍ
+INICIO
 ========================= */
 
 .inicio {
@@ -118,11 +112,14 @@ body {
     margin-bottom: 20px;
 }
 
-.inicio-texto > p:not(.saludo) {
+.inicio-texto p {
     max-width: 600px;
     font-size: 17px;
     margin-bottom: 30px;
-    line-height: 24px;
+}
+
+.inicio-texto .saludo {
+    margin-bottom: 0;
 }
 
 .boton {
@@ -143,73 +140,39 @@ body {
     background-color: #253c59;
 }
 
-/* FOTO */
+
+/* =========================
+FOTO PRINCIPAL
+========================= */
 
 .inicio-foto {
-    width: 40%;
+    width: 45%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .circulo-foto {
-    width: 280px;
-    height: 280px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     background-color: #d8e8f5;
     border: 8px solid white;
     box-shadow: 0 10px 30px rgba(37, 60, 89, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .circulo-foto img {
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 50%;
+    cursor: pointer;
 }
 
-/* DECORACIONES */
-
-.decoracion {
-    position: absolute;
-}
-
-.nube-izquierda {
-    left: 20px;
-    top: 60px;
-    color: #8c9da8;
-    font-size: 70px;
-}
-
-.estrella-uno {
-    right: 200px;
-    top: 60px;
-    color: #e8998d;
-    font-size: 35px;
-}
-
-.estrella-dos {
-    right: 10px;
-    bottom: 60px;
-    color: #6eb6df;
-    font-size: 30px;
-}
-
-.luna-grande {
-    right: 50px;
-    top: 40px;
-    color: #8c9da8;
-    font-size: 80px;
-}
-
-.frase-inicio {
-    position: absolute;
-    bottom: 40px;
-    left: 30px;
-    color: #e8998d;
-    font-size: 22px;
-}
 
 /* =========================
-   SECCIONES GENERALES
+SECCIONES GENERALES
 ========================= */
 
 .seccion {
@@ -239,38 +202,33 @@ body {
     font-size: 38px;
 }
 
+
 /* =========================
-   PROYECTOS
+PROYECTOS
 ========================= */
-
-.titulo-con-enlace {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-}
-
-.titulo-con-enlace a {
-    color: #e8998d;
-    text-decoration: none;
-    font-weight: bold;
-}
 
 .tarjetas-proyectos {
     display: flex;
     gap: 25px;
+    flex-wrap: wrap;
 }
 
 .tarjeta-proyecto {
     background-color: white;
     padding: 20px;
     border-radius: 25px;
-    flex: 1;
+    width: 47%;
     box-shadow: 0 8px 25px rgba(37, 60, 89, 0.08);
+    transition: 0.3s;
+}
+
+.tarjeta-proyecto:hover {
+    transform: translateY(-8px);
 }
 
 .tarjeta-proyecto img {
     width: 100%;
-    height: auto;
+    height: 250px;
     border-radius: 18px;
 }
 
@@ -312,8 +270,9 @@ body {
     color: #e8998d;
 }
 
+
 /* =========================
-   HABILIDADES
+HABILIDADES
 ========================= */
 
 .habilidad {
@@ -388,29 +347,74 @@ body {
     font-size: 22px;
 }
 
+
 /* =========================
-   REFERENCIA Y EDUCACIÓN
+REFERENCIA Y EDUCACIÓN
 ========================= */
 
 .columna {
     display: flex;
-    gap: 40px;
+    gap: 50px;
+    margin-top: 30px;
 }
 
-.referencia, .educacion {
-    flex: 1;
+.referencia {
+    width: 60%;
 }
 
-.tarjeta-info {
+.educacion {
+    width: 40%;
+}
+
+
+/* PERFIL DEL PROFESOR */
+
+.perfil-profesor {
     background-color: white;
     padding: 30px;
     border-radius: 25px;
-    display: flex;
-    gap: 20px;
-    box-shadow: 0 8px 25px rgba(37, 60, 89, 0.08);
+    box-shadow: 0 8px 25px rgba(157, 201, 255, 0.08);
+    text-align: center;
 }
 
-.icono-info {
+.perfil-profesor img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 5px solid #d8e8f5;
+    margin-bottom: 15px;
+}
+
+.datos-profesor h3 {
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+
+.cargo-profesor {
+    color: #e8998d;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.cargo-profesor{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+/* EDUCACIÓN */
+
+.tarjeta-educacion {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(37, 60, 89, 0.08);
+    display: flex;
+    gap: 20px;
+}
+
+.icono-educacion {
     width: 50px;
     height: 50px;
     background-color: #d8e8f5;
@@ -421,13 +425,15 @@ body {
     font-size: 22px;
 }
 
+
 /* =========================
-   TAREAS Y TRABAJOS
+TAREAS Y TRABAJOS
 ========================= */
 
 .tarjetas-trabajos {
     display: flex;
     gap: 25px;
+    margin-top: 30px;
 }
 
 .tarjeta-trabajo {
@@ -457,8 +463,9 @@ body {
     font-size: 14px;
 }
 
+
 /* =========================
-   VIDEO
+VIDEO
 ========================= */
 
 .video-seccion {
@@ -485,8 +492,9 @@ body {
     margin: 10px 0 20px;
 }
 
+
 /* =========================
-   CONTACTO
+CONTACTO
 ========================= */
 
 .contacto {
@@ -519,36 +527,34 @@ body {
     align-items: center;
     gap: 20px;
     text-decoration: none;
+}
+
+.contacto-card span {
+    color: #e8998d;
+    font-size: 25px;
+}
+
+.contacto-card strong {
     color: #253c59;
-    box-shadow: 0 8px 25px rgba(37, 60, 89, 0.08);
 }
 
-.contacto-card:hover {
-    background-color: #d8e8f5;
+.contacto-card p {
+    color: #8c9da8;
+    margin-top: 5px;
 }
 
-.contacto-card > span {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background-color: #d8e8f5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-}
 
 /* =========================
-   FOOTER
+PIE DE PÁGINA
 ========================= */
 
 footer {
     background-color: #253c59;
     color: white;
     text-align: center;
-    padding: 40px 20px;
+    padding: 30px;
 }
 
 footer p {
-    margin: 6px 0;
-}
+    margin: 5px;
+} 
