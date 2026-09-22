@@ -208,7 +208,7 @@ body {
 
 .tarjetas-proyectos {
     display: flex;
-    gap: 35px;
+    gap: 25px;
     flex-wrap: wrap;
     margin-top: 30px;
 }
@@ -217,17 +217,8 @@ body {
     background-color: white;
     padding: 25px;
     border-radius: 25px;
-    width: 30%;
-    min-width: 280px;
     flex: 1;
-    display: flex;
-    gap: 20px;
     box-shadow: 0 8px 25px rgba(37, 60, 89, 0.08);
-    transition: 0.3s;
-}
-
-.tarjeta-proyecto:hover {
-    transform: translateY(-8px);
 }
 
 .tarjeta-proyecto img {
