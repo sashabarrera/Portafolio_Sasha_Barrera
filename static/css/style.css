@@ -64,6 +64,8 @@ body {
 .menu {
     display: flex;
     gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .menu a {
@@ -81,17 +83,17 @@ body {
 
 .inicio {
     max-width: 1100px;
-    height: 600px;
+    min-height: 600px;
     margin: auto;
     padding: 80px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
 }
 
 .inicio-texto {
     width: 55%;
+    min-height: 280px;
 }
 
 .inicio-texto h2{
@@ -141,9 +143,11 @@ body {
 
 
 .inicio-foto {
-    width: 45%;
+    width: 40%;
     display: flex;
+    min-width: 250px;
     justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 .circulo-foto {
@@ -213,6 +217,7 @@ body {
     padding: 20px;
     border-radius: 25px;
     width: 47%;
+    min-width: 280px;
     box-shadow: 0 8px 25px rgba(37, 60, 89, 0.08);
     transition: 0.3s;
 }
