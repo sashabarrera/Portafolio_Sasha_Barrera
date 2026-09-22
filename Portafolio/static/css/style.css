@@ -11,9 +11,6 @@ body {
 }
 
 
-/* =========================
-CONTRASTE DE SECCIONES
-========================= */
 
 .seccion-blanca {
     background-color: #ffffff;
@@ -27,9 +24,7 @@ CONTRASTE DE SECCIONES
     margin-top: 50px;
 }
 
-/* =========================
-ENCABEZADO
-========================= */
+
 
 .encabezado {
     width: 100%;
@@ -82,9 +77,7 @@ ENCABEZADO
 }
 
 
-/* =========================
-INICIO
-========================= */
+
 
 .inicio {
     max-width: 1100px;
@@ -145,9 +138,7 @@ INICIO
 }
 
 
-/* =========================
-FOTO PRINCIPAL
-========================= */
+
 
 .inicio-foto {
     width: 45%;
@@ -174,10 +165,6 @@ FOTO PRINCIPAL
     cursor: pointer;
 }
 
-
-/* =========================
-SECCIONES GENERALES
-========================= */
 
 .seccion {
     width: 100%;
@@ -214,9 +201,6 @@ SECCIONES GENERALES
 }
 
 
-/* =========================
-PROYECTOS
-========================= */
 
 .tarjetas-proyectos {
     display: flex;
@@ -282,9 +266,7 @@ PROYECTOS
 }
 
 
-/* =========================
-HABILIDADES
-========================= */
+
 
 .habilidad {
     background-color: #f9f7f3;
@@ -359,10 +341,6 @@ HABILIDADES
 }
 
 
-/* =========================
-REFERENCIA Y EDUCACIÓN
-========================= */
-
 .columna {
     display: flex;
     gap: 50px;
@@ -377,8 +355,6 @@ REFERENCIA Y EDUCACIÓN
     width: 40%;
 }
 
-
-/* PERFIL DEL PROFESOR */
 
 .perfil-profesor {
     background-color: white;
@@ -431,7 +407,6 @@ REFERENCIA Y EDUCACIÓN
     background-color: #d8e8f5;
 }
 
-/* EDUCACIÓN */
 
 .tarjeta-educacion {
     background-color: #ffffff;
@@ -454,9 +429,7 @@ REFERENCIA Y EDUCACIÓN
 }
 
 
-/* =========================
-TAREAS Y TRABAJOS
-========================= */
+
 
 .tarjetas-trabajos {
     display: flex;
@@ -523,10 +496,6 @@ VIDEO
 }
 
 
-/* =========================
-CONTACTO
-========================= */
-
 .contacto {
     display: flex;
     gap: 60px;
@@ -573,10 +542,6 @@ CONTACTO
     margin-top: 5px;
 }
 
-
-/* =========================
-PIE DE PÁGINA
-========================= */
 
 footer {
     background-color: #253c59;
