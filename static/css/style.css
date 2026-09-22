@@ -428,7 +428,10 @@ body {
     font-size: 22px;
 }
 
-
+.icono-educacion img{
+    height: 65px;
+    width: 65px;
+}
 
 
 .tarjetas-trabajos {
