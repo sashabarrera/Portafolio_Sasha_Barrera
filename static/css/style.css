@@ -563,3 +563,30 @@ footer {
 footer p {
     margin: 5px;
 }
+.trabajos-seccion {
+    width: 100%;
+}
+
+.titulo-trabajos {
+    margin-bottom: 40px;
+}
+
+.tarjetas-tareas {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.tarjeta-tarea {
+    background-color: #f9f7f3;
+    padding: 25px;
+    border-radius: 25px;
+    width: 30%;
+    min-width: 250px;
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    box-shadow: 0 8px 25px rgba(37, 60, 89, 0.05);
+}
