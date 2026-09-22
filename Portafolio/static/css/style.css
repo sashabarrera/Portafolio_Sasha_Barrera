@@ -19,8 +19,13 @@ CONTRASTE DE SECCIONES
     background-color: #ffffff;
     border-top: 1px solid #d8e8f5;
     border-bottom: 1px solid #d8e8f5;
+    padding: 30px 0;
 }
 
+#habilidades{
+    width: 100%;
+    margin-top: 50px;
+}
 
 /* =========================
 ENCABEZADO
@@ -49,8 +54,8 @@ ENCABEZADO
 }
 
 .logo img {
-    width: 60px;
-    height: 60px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
 }
 
@@ -96,9 +101,8 @@ INICIO
     width: 55%;
 }
 
-.saludo {
-    color: #e8998d;
-    font-size: 24px;
+.inicio-texto h2{
+    align-items: center;
 }
 
 .inicio h1 {
@@ -176,9 +180,16 @@ SECCIONES GENERALES
 ========================= */
 
 .seccion {
+    width: 100%;
     max-width: 1100px;
     margin: auto;
     padding: 80px 30px;
+}
+
+.habilidades {
+    width: 100%;
+    padding: 80px 30px;
+    max-width: 100%;
 }
 
 .titulo-seccion {
@@ -373,13 +384,13 @@ REFERENCIA Y EDUCACIÓN
     background-color: white;
     padding: 30px;
     border-radius: 25px;
-    box-shadow: 0 8px 25px rgba(157, 201, 255, 0.08);
+    box-shadow: 0 4px 12px rgba(157, 201, 255, 0.08);
     text-align: center;
 }
 
 .perfil-profesor img {
-    width: 90px;
-    height: 90px;
+    width: 105px;
+    height: 105px;
     border-radius: 50%;
     border: 5px solid #d8e8f5;
     margin-bottom: 15px;
@@ -390,17 +401,34 @@ REFERENCIA Y EDUCACIÓN
     margin-bottom: 5px;
 }
 
-.cargo-profesor {
-    color: #e8998d;
-    font-weight: bold;
-    margin-bottom: 15px;
+.descripcion-profesor {
+    color: #6eb6df;
+    margin-top: 10px;
+    margin-bottom: 25px;
 }
 
-.cargo-profesor{
+.correo-profesor{
     display: flex;
     align-items: center;
-    margin-top: 15px;
+    justify-content: center;
+    gap: 10px;
+    color: #253c59;
     text-decoration: none;
+    margin-top: 10px;
+}
+
+.correo-profesor span {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #d8e8f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.correo-profesor:hover {
+    background-color: #d8e8f5;
 }
 
 /* EDUCACIÓN */
@@ -434,12 +462,14 @@ TAREAS Y TRABAJOS
     display: flex;
     gap: 25px;
     margin-top: 30px;
+    width: 100%;
 }
 
 .tarjeta-trabajo {
     background-color: #f9f7f3;
     padding: 25px;
     border-radius: 25px;
+    width: 115%;
     flex: 1;
     display: flex;
     gap: 20px;
@@ -557,4 +587,4 @@ footer {
 
 footer p {
     margin: 5px;
-} 
+}
